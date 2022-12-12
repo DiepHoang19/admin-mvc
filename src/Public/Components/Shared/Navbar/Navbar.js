@@ -31,6 +31,8 @@ function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
+    const AuthAdmin = true;
+
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
@@ -210,6 +212,18 @@ function Navbar() {
                                     <MenuItem>
                                         <Avatar /> My account
                                     </MenuItem>
+                                    {
+                                        AuthAdmin ? (
+                                            <>
+                                                <Link to="/dashboard" >
+                                                    <MenuItem>
+                                                        <Avatar /> Admin
+                                                    </MenuItem>
+                                                </Link>
+                                            </>
+                                        )
+                                            : ""
+                                    }
                                     <Divider />
                                     <MenuItem>
                                         <ListItemIcon>
@@ -237,13 +251,13 @@ function Navbar() {
                         )
                             : (
                                 <>
-                                    <Link to="/login">
+                                    <Link to="/login" style={{ color: "whitesmoke", marginRight: "10PX" }}>
                                         Login
                                     </Link>
                                     <div>
                                         Or
                                     </div>
-                                    <Link to="/register">
+                                    <Link to="/register" style={{ color: "whitesmoke", marginLeft: "10px" }} >
                                         Register
                                     </Link>
                                 </>
