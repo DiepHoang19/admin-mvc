@@ -18,7 +18,6 @@ import Divider from '@mui/material/Divider';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import { ButtonBase } from '@mui/material';
 import { message } from 'antd';
 
 
@@ -29,7 +28,6 @@ const pages = ['Products', 'Pricing', 'Blog'];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const AuthAdmin = true;
 

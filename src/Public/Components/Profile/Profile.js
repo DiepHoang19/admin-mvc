@@ -97,8 +97,8 @@ function Profile() {
                                                     <div className="col-md-8 col-lg-9">
                                                         <img src="assets/img/profile-img.jpg" alt="Profile" />
                                                         <div className="pt-2">
-                                                            <a href="#" className="btn btn-primary btn-sm" title="Upload new profile image"><i className="bi bi-upload" /></a>
-                                                            <a href="#" className="btn btn-danger btn-sm" title="Remove my profile image"><i className="bi bi-trash" /></a>
+                                                            <Link to="#" className="btn btn-primary btn-sm" title="Upload new profile image"><i className="bi bi-upload" /></Link>
+                                                            <Link to="#" className="btn btn-danger btn-sm" title="Remove my profile image"><i className="bi bi-trash" /></Link>
                                                         </div>
                                                     </div>
                                                 </div>
